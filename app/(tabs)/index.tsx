@@ -77,7 +77,7 @@ export default function Calendar() {
 
   return (
     <SafeAreaView style={styles.container}>
-      {calendarData && (
+      {calendarData && customer && (
         <SectionList
           sections={calendarData}
           keyExtractor={(_, index) => index.toString()}
